@@ -1,0 +1,105 @@
+# Pages CMS - SOLO contenido para visualización pública.
+media:
+  input: imagenes/trabajos
+  output: /imagenes/trabajos
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+content:
+  - name: trabajos
+    label: Galería de trabajos
+    type: file
+    path: trabajos.json
+    format: json
+    list: true
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+        options:
+          maxlength: 110
+      - name: descripcion
+        label: Descripción
+        type: text
+        required: true
+        options:
+          maxlength: 550
+      - name: categoria
+        label: Categoría
+        type: select
+        required: true
+        options:
+          values:
+            - name: bordados
+              label: Bordados
+            - name: costura
+              label: Costura
+            - name: logos
+              label: Diseño de logos
+      - name: imagen
+        label: Fotografía autorizada
+        type: image
+        required: true
+      - name: alt
+        label: Descripción accesible
+        type: string
+        required: true
+        options:
+          maxlength: 200
+      - name: publicado
+        label: Publicar en la web
+        type: boolean
+
+  - name: presentacion
+    label: Presentación del taller
+    type: file
+    path: presentacion.json
+    format: json
+    fields:
+      - name: introduccion
+        label: Introducción de portada
+        type: text
+        required: true
+        options:
+          maxlength: 650
+      - name: nosotros1
+        label: Acerca de nosotros (párrafo 1)
+        type: text
+        required: true
+      - name: nosotros2
+        label: Acerca de nosotros (párrafo 2)
+        type: text
+        required: true
+  - name: servicios
+    label: Servicios de VNAMJ
+    type: file
+    path: servicios.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Identificador fijo
+        type: select
+        required: true
+        options:
+          values:
+            - name: bordados
+              label: Bordados
+            - name: costura
+              label: Costura
+            - name: logos
+              label: Logos
+      - name: titulo
+        label: Nombre del servicio
+        type: string
+        required: true
+      - name: descripcion
+        label: Descripción
+        type: text
+        required: true
+      - name: imagen
+        label: Fotografía autorizada (opcional)
+        type: image
+      - name: alt
+        label: Descripción accesible de la imagen
+        type: string
