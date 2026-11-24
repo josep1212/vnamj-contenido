@@ -3,21 +3,19 @@
     "id": "bordados",
     "titulo": "Bordados personalizados",
     "descripcion": "Trabajos de bordado según los requerimientos y diseños de cada solicitud.",
-    "imagen": "",
     "alt": "Ilustración referencial de bordado"
   },
   {
     "id": "costura",
     "titulo": "Costura y confección",
     "descripcion": "Servicios específicos de costura y confección que se definirán con el taller.",
-    "imagen": "",
+    "imagen": "/imagenes/trabajos/comming-soon.png",
     "alt": "Ilustración referencial de confección"
   },
   {
     "id": "logos",
     "titulo": "Diseño de logos",
     "descripcion": "Diseños y propuestas gráficas de acuerdo con las necesidades de cada proyecto.",
-    "imagen": "",
     "alt": "Ilustración referencial de diseño"
   }
 ]
