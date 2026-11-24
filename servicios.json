@@ -1,20 +1,31 @@
+
 [
+  {
+    "id": "confeccion",
+    "titulo": "Confección de prendas",
+    "descripcion": "Creamos poleras, polerones, buzos, gorros, uniformes, ropa deportiva y corporativa. Trabajamos con diferentes telas, tallas y colores para dar vida a prendas con identidad propia.",
+    "imagen": "",
+    "alt": "Confecciones personalizadas de VNAM J&J"
+  },
+  {
+    "id": "matrices",
+    "titulo": "Diseño de matrices",
+    "descripcion": "Preparamos los diseños digitales necesarios para bordar nombres, escudos y logos, cuidando sus formas, colores y detalles.",
+    "imagen": "",
+    "alt": "Proceso de diseño de matrices para bordado"
+  },
   {
     "id": "bordados",
     "titulo": "Bordados personalizados",
-    "descripcion": "Trabajos de bordado según los requerimientos y diseños de cada solicitud.",
-    "alt": "Ilustración referencial de bordado"
+    "descripcion": "Personalizamos prendas con nombres, escudos, logos, flores, dibujos y frases. Cuidamos cada detalle del diseño.",
+    "imagen": "",
+    "alt": "Bordado personalizado de VNAM J&J"
   },
   {
-    "id": "costura",
-    "titulo": "Costura y confección",
-    "descripcion": "Servicios específicos de costura y confección que se definirán con el taller.",
-    "alt": "Ilustración referencial de confección"
-  },
-  {
-    "id": "logos",
-    "titulo": "Diseño de logos",
-    "descripcion": "Diseños y propuestas gráficas de acuerdo con las necesidades de cada proyecto.",
-    "alt": "Ilustración referencial de diseño"
+    "id": "estampados",
+    "titulo": "Estampados personalizados",
+    "descripcion": "Damos vida a diseños coloridos y llamativos mediante estampados, asesorando sobre la alternativa adecuada para cada proyecto.",
+    "imagen": "",
+    "alt": "Estampado personalizado de VNAM J&J"
   }
 ]

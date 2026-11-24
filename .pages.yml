@@ -1,81 +1,107 @@
-# Pages CMS - SOLO contenido para visualización pública.
+
+# VNAM J&J - Administracion editorial
+# Los archivos y las imagenes son publicos.
+
 media:
   input: imagenes/trabajos
   output: /imagenes/trabajos
   extensions: [jpg, jpeg, png, webp]
   rename: safe
+
 content:
+
+  # FOTOGRAFIAS DE LA WEB
   - name: trabajos
-    label: Galería de trabajos
+    label: Fotografias de VNAM J&J
     type: file
     path: trabajos.json
     format: json
     list: true
+    operations:
+      delete: false
     fields:
       - name: titulo
-        label: Título
+        label: Nombre del trabajo
         type: string
         required: true
-        options:
-          maxlength: 110
+
       - name: descripcion
-        label: Descripción
+        label: Descripcion del trabajo
         type: text
         required: true
-        options:
-          maxlength: 550
+
       - name: categoria
-        label: Categoría
+        label: Categoria
         type: select
         required: true
         options:
           values:
+            - name: confeccion
+              label: Confeccion de prendas
             - name: bordados
-              label: Bordados
-            - name: costura
-              label: Costura
-            - name: logos
-              label: Diseño de logos
+              label: Bordados personalizados
+            - name: estampados
+              label: Estampados personalizados
+            - name: matrices
+              label: Diseno de matrices
+
       - name: imagen
-        label: Fotografía autorizada
+        label: Fotografia
         type: image
         required: true
+
       - name: alt
-        label: Descripción accesible
+        label: Descripcion de la imagen
         type: string
         required: true
-        options:
-          maxlength: 200
+
       - name: publicado
-        label: Publicar en la web
+        label: Mostrar en la pagina web
         type: boolean
 
+  # TEXTOS INSTITUCIONALES
   - name: presentacion
-    label: Presentación del taller
+    label: Presentacion de VNAM J&J
     type: file
     path: presentacion.json
     format: json
+    operations:
+      delete: false
     fields:
       - name: introduccion
-        label: Introducción de portada
+        label: Introduccion de portada
         type: text
         required: true
-        options:
-          maxlength: 650
+
       - name: nosotros1
-        label: Acerca de nosotros (párrafo 1)
+        label: Nuestra historia - Parrafo 1
         type: text
         required: true
+
       - name: nosotros2
-        label: Acerca de nosotros (párrafo 2)
+        label: Nuestra historia - Parrafo 2
         type: text
         required: true
+
+      - name: mision
+        label: Nuestra mision
+        type: text
+        required: true
+
+      - name: vision
+        label: Nuestra vision
+        type: text
+        required: true
+
+  # SERVICIOS
   - name: servicios
-    label: Servicios de VNAMJ
+    label: Servicios de VNAM J&J
     type: file
     path: servicios.json
     format: json
     list: true
+    operations:
+      delete: false
     fields:
       - name: id
         label: Identificador fijo
@@ -83,23 +109,29 @@ content:
         required: true
         options:
           values:
+            - name: confeccion
+              label: Confeccion
+            - name: matrices
+              label: Matrices
             - name: bordados
               label: Bordados
-            - name: costura
-              label: Costura
-            - name: logos
-              label: Logos
+            - name: estampados
+              label: Estampados
+
       - name: titulo
         label: Nombre del servicio
         type: string
         required: true
+
       - name: descripcion
-        label: Descripción
+        label: Descripcion del servicio
         type: text
         required: true
+
       - name: imagen
-        label: Fotografía autorizada (opcional)
+        label: Fotografia del servicio
         type: image
+
       - name: alt
-        label: Descripción accesible de la imagen
+        label: Descripcion accesible
         type: string
