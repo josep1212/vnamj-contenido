@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "titulo": "Proximamente",
+    "descripcion": "Prueba",
+    "categoria": "confeccion",
+    "imagen": "/imagenes/trabajos/vnam-soon.jpg",
+    "alt": "Prueba",
+    "publicado": true
+  }
+]
